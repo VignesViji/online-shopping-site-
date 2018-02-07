@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CG Electronics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Bootstrap styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Customize styles -->
+    <link href="style.css" rel="stylesheet"/>
+    <!-- font awesome styles -->
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+		
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  </head>
+<body>
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var pass=document.myform.pass.value;  
+  
+if (name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(pass.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<!-- 
+	Upper Header Section 
+-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="topNav">
+		<div class="container">
+			<div class="alignR">
+				<div class="pull-left socialNw">
+					<a href="#"><span class="icon-twitter"></span></a>
+					<a href="#"><span class="icon-facebook"></span></a>
+					<a href="#"><span class="icon-youtube"></span></a>
+					<a href="#"><span class="icon-tumblr"></span></a>
+				</div>
+				<a class="active" href="index.html"> <span class="icon-home"></span> Home</a> 
+				<a href="login.html"><span class="icon-user"></span> My Account</a> 
+				<a href="register.html"><span class="icon-edit"></span> Free Register </a> 
+				<a href="contact.html"><span class="icon-envelope"></span> Contact us</a>
+				<a href="cart.html"><span class="icon-shopping-cart"></span><span class="badge badge-warning"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+Lower Header Section 
+-->
+<div class="container">
+<div id="gototop"> </div>
+<header id="header">
+<div class="row">
+	<div class="span4">
+	<h1>
+	<a class="logo" href="index.html"><span>CG Electronics</span> 
+		<img src="file:///C|/Users/revs/Desktop/ac images/logoo.png"><h1>CG ELECTRONICS</h1>
+	</a>
+	</h1>
+	</div>
+	
+</header>
+
+<!--
+Navigation Bar Section 
+-->
+<div class="navbar">
+	  <div class="navbar-inner">
+		<div class="container">
+		  <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </a>
+		  <div class="nav-collapse">
+			<ul class="nav">
+			  <li class="active"><a href="index.html">Home	</a></li>
+			   <li class=""><a href="grid-view.html">Products</a></li>
+			  <li class=""><a href="general.html">About Us</a></li>
+			</ul>
+			<form action="#" class="navbar-search pull-left">
+			  <input type="text" placeholder="Search" class="search-query span2">
+			</form>
+            
+
+			<ul class="nav pull-right">
+			<li class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
+				<div class="dropdown-menu">
+				<form name="myform" class="form-horizontal loginFrm" onsubmit="return validateform()" action="grid-view.html">
+				  <div class="control-group">
+					<input type="text" class="span2" id="inputEmail" placeholder="Email" name="email" required>
+				  </div>
+				  <div class="control-group">
+					<input type="password" class="span2" id="inputPassword" placeholder="Password" name="pass" required>
+				  </div>
+				  <div class="control-group">
+					<label class="checkbox">
+					<input type="checkbox"> Remember me
+					</label>
+					<button type="submit" class="shopBtn btn-block">Sign in</button>
+				  </div>
+				</form>
+				</div>
+			</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+<!-- 
+Body Section 
+-->
+
+
+	<div class="row">
+<div class="span3">
+<div class="well well-small">
+	<ul class="nav nav-list" >
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Daikin</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Voltas</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Videocon</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Hitachi</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>See All Products</a></li>
+		<li style="border:0"> &nbsp;</li>
+		
+	</ul>
+</div>
+			  <div class="well well-small alert alert-warning cntr">
+				  <h2>50% Discount</h2>
+				  <p> 
+					 only valid for online order. <br><br><a class="defaultBtn" href="#">Click here </a>
+				  </p>
+			  </div>
+			  <div class="well well-small" ><a href="#"><img src="assets/img/paypal.jpg" alt="payment method paypal"></a></div>
+			
+			<a class="shopBtn btn-block" href="#">Upcoming products <br><small>Click to view</small></a>
+			<br>
+			<br>
+			
+	</div>
+	<div class="span9">
+	<div class="well np">
+		<div id="myCarousel" class="carousel slide homCar">
+            <div class="carousel-inner">
+			  <div class="item">
+                <img style="width:100%" id="imgClickAndChange" src="file:///C|/Users/revs/Documents/Unnamed Site 2/1.jpg" onclick="changeImage()">
+              </div>
+			  <div class="item">
+                <img style="width:100%" src="file:///C|/Users/revs/Desktop/New folder (2)/Air-Conditioner-05.jpg">
+                </div>
+			  <div class="item active">
+                <img style="width:100%" src="file:///C|/Users/revs/Desktop/New folder (2)/maxresdefault.jpg">
+               
+              </div>
+              <div class="item">
+                <img style="width:100%" src="file:///C|/Users/revs/Desktop/New folder (2)/HTB1umG1IFXXXXavXpXXq6xXFXXXM.jpg">
+                              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+<!--
+New Products
+-->
+	<div class="well well-small">
+	<h3>New Products </h3>
+	<hr class="soften"/>
+		<div class="row-fluid">
+		<div id="newProductCar" class="carousel slide">
+            <div class="carousel-inner">
+			<div class="item active">
+			  <ul class="thumbnails">
+				<li class="span3">
+				<div class="thumbnail">
+					<a class="zoomTool" href="" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a href="#" class="tag"></a>
+					<a href="#"><img src="file:///C|/Users/revs/Desktop/ac images/hitachi/hitachi RAU312 split 1 ton.jpg" alt="hitachi"></a>
+				</div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail">
+					<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a href="#" class="tag"></a>
+					<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/voltas/voltas 122DYE split 1 ton.jpg"></a>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail">
+					<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				  <a href="#" class="tag"></a><a  href="#"><a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/voltas/voltas 125 split 1 ton.jpg"></a>
+                  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail">
+					<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/hitachi/hitachi RAU318 split 1.5 ton.jpg"alt=""></a>
+				  </div>
+				</li>
+			  </ul>
+			  </div>
+		   <div class="item">
+		  <ul class="thumbnails">
+			<li class="span3">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/hitachi/hitachi RAU312 split 1 ton.jpg"></a>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/videocon/81AvfmgUEJL._SL1500_.jpg"></a>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/videocon/videocon vsb53 split 1.5ton.jpg"></a>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/daikin ftc35 split 1 ton.jpg" width="600" height="auto"></a>
+			  </div>
+			</li>
+		  </ul>
+		  </div>
+		   </div>
+		  <a class="left carousel-control" href="#newProductCar" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#newProductCar" data-slide="next">&rsaquo;</a>
+		  </div>
+		  </div>
+		<div class="row-fluid">
+		  <ul class="thumbnails">
+			<li class="span4">
+			  <div class="thumbnail">
+				 
+				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+<a href="#"><img src="file:///C|/Users/revs/Desktop/ac images/hitachi/hitachi RAU318 split 1.5 ton.jpg" width="600" height="auto"></a>
+				<div class="caption cntr">
+					<p>Hitachi</p>
+					<p><strong>33,100</strong></p>
+					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+					<div class="actionList">
+						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#"> Add to Compare </a>
+					</div> 
+					<br class="clr">
+				</div>
+			  </div>
+			</li>
+			<li class="span4">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a href="#"><img src="file:///C|/Users/revs/Desktop/ac images/voltas/voltas 125 split 1 ton.jpg" alt=""></a>
+				<div class="caption cntr">
+					<p>Voltas 1.5 ton</p>
+					<p><strong>39,400</strong></p>
+					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+					<div class="actionList">
+						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#"> Add to Compare </a>
+					</div> 
+					<br class="clr">
+				</div>
+			  </div>
+			</li>
+			<li class="span4">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a href="#"><img src="file:///C|/Users/revs/Desktop/ac images/voltas/voltas 122DYE split 1 ton.jpg"></a>
+				<div class="caption cntr">
+					<p>Voltas 1 ton</p>
+					<p><strong>24,900</strong></p>
+					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+					<div class="actionList">
+						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#"> Add to Compare </a>
+					</div> 
+					<br class="clr">
+				</div>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	</div>
+	<!--
+	Featured Products
+	-->
+		<div class="well well-small">
+		  <h3><a class="btn btn-mini pull-right" href="#" title="View more">View More<span class="icon-plus"></span></a>Best Selling Products  </h3>
+		  <hr class="soften"/>
+		  <div class="row-fluid">
+		  <ul class="thumbnails">
+			<li class="span4">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/videocon/81AvfmgUEJL._SL1500_.jpg" width="600" height="auto"></a>
+				<div class="caption">
+				  <h5>Videocon</h5>
+				  <h4>
+					  <a class="defaultBtn" href="#" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+					  <span class="pull-right">34,600</span>
+				  </h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span4">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/videocon/videocon vsb53 split 1.5ton.jpg" width="600" height="auto"></a>
+				<div class="caption">
+				  <h5>Videocon</h5>
+				  <h4>
+					  <a class="defaultBtn" href="#" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+					  <span class="pull-right">33,400</span>
+				  </h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span4">
+			  <div class="thumbnail">
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="#"><img src="file:///C|/Users/revs/Desktop/ac images/voltas/voltas sac 173 split 1.4 ton.jpg"/></a>
+				<div class="caption">
+				  <h5>Voltas</h5>
+				  <h4>
+					  <a class="defaultBtn" href="#" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+					  <span class="pull-right">42,300</span>
+				  </h4>
+				</div>
+			  </div>
+			</li>
+		  </ul>	
+	</div>
+	</div>
+	
+	
+<!-- 
+Clients 
+-->
+<section class="our_client">
+	<hr class="soften"/>
+	<h4 class="title cntr"><span class="text">Manufacturers</span></h4>
+	<hr class="soften"/>
+	<div class="row">
+		<div class="span2">
+			<a href="#"><img alt="" src="file:///C|/Users/revs/Desktop/New folder (2)/2. daikin.jpg"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="file:///C|/Users/revs/Desktop/New folder (2)/4.jpg"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="file:///C|/Users/revs/Desktop/New folder (2)/hitachi-ac-logo.png"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="file:///C|/Users/revs/Desktop/New folder (2)/videocon-logo.jpg"></a>
+		</div>
+		
+	</div>
+</section>
+
+<!--
+Footer
+-->
+<footer class="footer">
+<div class="row-fluid">
+<div class="span2">
+<h5>Your Account</h5>
+<a href="#">YOUR ACCOUNT</a><br>
+<a href="#">PERSONAL INFORMATION</a><br>
+<a href="#">ADDRESS</a><br>
+<a href="#">DISCOUNT</a><br>
+<a href="#">ORDER HISTORY</a><br>
+ </div>
+<div class="span2">
+<h5>Information</h5>
+<a href="contact.html">CONTACT</a><br>
+<a href="#">SITEMAP</a><br>
+<a href="#">LEGAL NOTICE</a><br>
+<a href="#">TERMS AND CONDITIONS</a><br>
+<a href="#">ABOUT US</a><br>
+ </div>
+<div class="span2">
+<h5>Our Offer</h5>
+<a href="#">NEW PRODUCTS</a> <br>
+<a href="#">TOP SELLERS</a><br>
+<a href="#">SPECIALS</a><br>
+<a href="#">MANUFACTURERS</a><br>
+<a href="#">SUPPLIERS</a> <br/>
+ </div>
+<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.easing-1.3.min.js"></script>
+    <script src="assets/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="assets/js/shop.js"></script>
+  </body>
+</html>
